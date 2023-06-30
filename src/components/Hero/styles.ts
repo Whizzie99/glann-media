@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-// import sample from '../../assets/images/hero-img.jpeg';
+import styled from "styled-components";
 
 export const StyledHero = styled.div`
   display: flex;
@@ -18,13 +16,13 @@ export const StyledHeroLeftContent = styled.div`
   margin-top: 10em;
   margin-left: 3em;
 
-  h1{
+  h1 {
     font-size: 3.5em;
     font-weight: 900;
     color: var(--white);
   }
 
-  a{
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,17 +33,17 @@ export const StyledHeroLeftContent = styled.div`
     text-decoration: none;
     background: var(--purple);
     padding: 0.6em;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     border: 0.1em solid transparent;
     width: 10em;
 
-    &:hover{
+    &:hover {
       background: transparent;
       border: 0.1em solid var(--purple);
       color: var(--purple);
     }
 
-    span:last-child{
+    span:last-child {
       margin-top: 0.2em;
       font-size: 1.5em;
     }
@@ -56,14 +54,14 @@ export const StyledHeroRight = styled.div`
   width: 50%;
   position: relative;
 
-  img{
+  img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

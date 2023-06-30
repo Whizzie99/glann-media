@@ -7,12 +7,12 @@ import Footer from "../../components/shared/Footer/Footer";
 const RootLayout: React.FC = () => {
   return (
     <>
-      <GlobalStyles/>
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
+      <GlobalStyles />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   );
-}
- 
+};
+
 export default RootLayout;
