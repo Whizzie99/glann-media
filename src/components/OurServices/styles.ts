@@ -44,19 +44,21 @@ export const StyledServicesCarousel = styled.div`
   margin-top: 2em;
   padding: 2em 0;
 
-  .swiper{
+  .swiper {
     position: static;
 
-
-    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
       bottom: 5px;
     }
 
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
       background: var(--white);
     }
 
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
       background: var(--purple);
     }
   }

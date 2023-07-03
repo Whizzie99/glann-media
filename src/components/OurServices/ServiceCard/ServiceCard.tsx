@@ -10,16 +10,14 @@ interface Props {
   description: string;
 }
 
-const ServiceCard: React.FC<Props> = ({img, title, description}) => {
+const ServiceCard: React.FC<Props> = ({ img, title, description }) => {
   return (
     <StyledCard>
       <StyledIcon>
         <img src={img || sample} alt="" />
       </StyledIcon>
       <h3>{title}</h3>
-      <p>
-        {description.substring(0, 100)}...
-      </p>
+      <p>{description.substring(0, 100)}...</p>
       <StyledReadMoreBtn>
         <span>read more</span>
         <span>

@@ -5,12 +5,15 @@ import { ourServicesData } from "../../data/services";
 import Container from "../shared/Container/Container";
 import HeaderMarquee from "../shared/HeaderMarquee/HeaderMarquee";
 import ServiceCard from "./ServiceCard/ServiceCard";
-import { StyledWrapper, StyledServicesHeading, StyledServicesCarousel } from "./styles";
+import {
+  StyledWrapper,
+  StyledServicesHeading,
+  StyledServicesCarousel,
+} from "./styles";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
-
 
 import stroke from "../../assets/images/stroke.png";
 
@@ -32,11 +35,15 @@ const OurServices: React.FC = () => {
             <span>
               Excellence:
               <img src={stroke} alt="stroke" />
-            </span>
-            {" "} Our Heart,<br/>Our Core
+            </span>{" "}
+            Our Heart,
+            <br />
+            Our Core
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate nihil quidem aperiam necessitatibus suscipit esse quas quam labore. Eaque
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus cupiditate nihil quidem aperiam necessitatibus suscipit
+            esse quas quam labore. Eaque
           </p>
         </StyledServicesHeading>
         <StyledServicesCarousel>
@@ -63,13 +70,15 @@ const OurServices: React.FC = () => {
               },
             }}
           >
-            { 
-              ourServicesData.map((ourService: OurServiceData) => (
-                <SwiperSlide key={ourService.id}>
-                  <ServiceCard img={ourService.img} title={ourService.title} description={ourService.description}/>
-                </SwiperSlide>
-              ))
-            }
+            {ourServicesData.map((ourService: OurServiceData) => (
+              <SwiperSlide key={ourService.id}>
+                <ServiceCard
+                  img={ourService.img}
+                  title={ourService.title}
+                  description={ourService.description}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </StyledServicesCarousel>
       </Container>
