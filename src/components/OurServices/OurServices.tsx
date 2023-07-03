@@ -1,26 +1,77 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
+import { ourServicesData } from "../../data/services";
 import Container from "../shared/Container/Container";
-import { StyledWrapper, StyledServicesContent } from "./styles";
+import HeaderMarquee from "../shared/HeaderMarquee/HeaderMarquee";
+import ServiceCard from "./ServiceCard/ServiceCard";
+import { StyledWrapper, StyledServicesHeading, StyledServicesCarousel } from "./styles";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+
 
 import stroke from "../../assets/images/stroke.png";
+
+// INTERFACE
+type OurServiceData = {
+  id: number;
+  title: string;
+  description: string;
+  img: string;
+};
 
 const OurServices: React.FC = () => {
   return (
     <StyledWrapper>
+      <HeaderMarquee text="our serices" />
       <Container>
-        <StyledServicesContent>
-          <h1>
-            our{" "}
+        <StyledServicesHeading>
+          <h3>
             <span>
-              services
+              Excellence:
               <img src={stroke} alt="stroke" />
             </span>
-          </h1>
+            {" "} Our Heart,<br/>Our Core
+          </h3>
           <p>
-            Here, excellence is more than just a buzzword. It is at the heart
-            and core of everything we do
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate nihil quidem aperiam necessitatibus suscipit esse quas quam labore. Eaque
           </p>
-        </StyledServicesContent>
+        </StyledServicesHeading>
+        <StyledServicesCarousel>
+          <Swiper
+            spaceBetween={20}
+            loop={true}
+            modules={[Autoplay, Pagination]}
+            pagination={{
+              dynamicBullets: true,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            { 
+              ourServicesData.map((ourService: OurServiceData) => (
+                <SwiperSlide key={ourService.id}>
+                  <ServiceCard img={ourService.img} title={ourService.title} description={ourService.description}/>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+        </StyledServicesCarousel>
       </Container>
     </StyledWrapper>
   );

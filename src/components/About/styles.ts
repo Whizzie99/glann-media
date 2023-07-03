@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
   padding: 10em 0;
+  padding-bottom: 3em;
   background: var(--black-2);
 
   h3 {
@@ -35,8 +36,8 @@ export const StyledWrapper = styled.div`
     font-weight: 300;
   }
 
-  .custom-marque{
-    > div{
+  .custom-marque {
+    > div {
       gap: 1em;
     }
   }
@@ -51,4 +52,4 @@ export const StyledMarqueeText = styled.div`
   -webkit-text-stroke-width: 0.01em;
   -webkit-text-stroke-color: var(--purple);
   /* margin-left: 2em !important; */
-`
+`;

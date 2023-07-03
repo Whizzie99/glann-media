@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const StyledWrapper = styled.div``;
+export const StyledWrapper = styled.div`
+  .custom-marquee {
+    > div {
+      gap: 1em;
+    }
+  }
+`;
 
 export const StyledMarqueeText = styled.div`
   font-size: 5em;
