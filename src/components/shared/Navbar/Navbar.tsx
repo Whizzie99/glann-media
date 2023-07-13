@@ -1,31 +1,26 @@
 import React from "react";
 import Container from "../Container/Container";
-import {
-  StyledWrapper,
-  StyledNavLogo,
-  StyledHamburgerMenu,
-  StyledNav,
-} from "./styles";
+import { StyledWrapper, StyledLogo, StyledHamburgerMenu, StyledNav } from "./styles";
 
-import logo from "../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.png"
 
 const Navbar: React.FC = () => {
   return (
     <StyledWrapper>
-      <Container>
+      <Container width="90%">
         <StyledNav>
-          <StyledNavLogo>
-            <img src={logo} alt="logo" />
-          </StyledNavLogo>
+          <StyledLogo>
+            <img src={logo} alt="Glann Media Consult Logo" />
+          </StyledLogo>
           <StyledHamburgerMenu>
             <span></span>
             <span></span>
             <span></span>
-          </StyledHamburgerMenu>
-        </StyledNav>
+            </StyledHamburgerMenu>
+          </StyledNav>
       </Container>
     </StyledWrapper>
   );
-};
+}
 
 export default Navbar;
