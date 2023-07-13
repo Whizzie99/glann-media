@@ -6,8 +6,8 @@ export const GlobalStyles = createGlobalStyle`
   --font-stack: 'Hanken Grotesk', sans-serif;
   --white: #fff;
   --black: #000;
-  --black-2: #130F0F;
-  --purple: #BD79D9;
+  --black-2: #101010;
+  --primary-gradient: linear-gradient(48deg, #BF00FF 0%, #750CE8 100%);
 }
 
 
