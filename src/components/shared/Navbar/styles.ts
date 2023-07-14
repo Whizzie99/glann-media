@@ -2,10 +2,18 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  /* margin: auto 0; */
+  backdrop-filter: brightness(90%) blur(20px);
+  -webkit-backdrop-filter: brightness(90%) blur(20px);
+  -moz-backdrop-filter: brightness(90%) blur(20px);
   padding: 2em;
+  border-radius: 2em;
+  /* padding: 2em; */
+
   /* background: rgba(255,255,255,0.4);
   backdrop-filter: blur(10px);
   border-radius: 10px;

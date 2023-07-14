@@ -17,7 +17,7 @@ export const StyledContentLeft = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  p{
+  p {
     width: 80%;
     line-height: 1.5;
     font-size: 1.1em;
@@ -30,13 +30,14 @@ export const StyledHeading = styled.div`
   display: flex;
   gap: 0.3em;
 
-  h2{
+  h2 {
     font-size: 3em;
+    font-weight: 900;
     color: var(--gray-1);
     text-transform: uppercase;
   }
 
-  > span{
+  > span {
     margin-top: 2.4em;
     /* align-self: flex-end; */
     /* margin-top: -1em; */
@@ -52,17 +53,17 @@ export const StyledImg = styled.div`
   width: 80%;
   height: 30em;
 
-  img{
+  img {
     position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 5em;
     border-top-right-radius: 5em;
-    z-index: 99;
+    z-index: 2;
   }
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 1em;
@@ -81,21 +82,21 @@ export const StyledAttractorHook = styled.div`
   background: var(--black-4);
   border-radius: 1.25em;
 
-  h2{
+  h2 {
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
     font-size: 2.6em;
     font-weight: 900;
 
-    img{
+    img {
       height: 0.8em;
       width: 2em;
       object-fit: cover;
       border-radius: 2em;
     }
 
-    span{
+    span {
       display: inline-flex;
       justify-content: center;
       align-items: center;

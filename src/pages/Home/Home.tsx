@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import CustomMarquee from "../../components/shared/CustomMarquee/CustomMarquee";
 import About from "../../components/About/About";
+import OurServices from "../../components/OurServices/OurServices";
 
 const Home: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
       <Hero />
       <CustomMarquee />
       <About />
+      <OurServices />
     </>
   );
 };

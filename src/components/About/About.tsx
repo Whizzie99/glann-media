@@ -9,7 +9,7 @@ import {
   StyledContentRight,
   StyledHeading,
   StyledImg,
-  StyledAttractorHook
+  StyledAttractorHook,
 } from "./styles";
 
 import sample from "../../assets/images/hero-img-black.jpg";
@@ -39,8 +39,14 @@ const About: React.FC = () => {
           </StyledContentRight>
         </StyledContent>
         <StyledAttractorHook>
-          <h2>power your business <img src={hookImg} alt="" /> with
-          <br/>creative <span><BsArrowUpRight/></span> solutions
+          <h2>
+            power your business <img src={hookImg} alt="" /> with
+            <br />
+            creative{" "}
+            <span>
+              <BsArrowUpRight />
+            </span>{" "}
+            solutions
           </h2>
         </StyledAttractorHook>
       </Container>

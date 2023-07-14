@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   --black-3: #171717;
   --black-4: #292929;
   --gray-1: #C4C4C4;
+  --gray-2: #5F5F5F;
 
   --primary-gradient: linear-gradient(48deg, #BF00FF 0%, #750CE8 100%);
 }
