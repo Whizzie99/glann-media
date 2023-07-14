@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../shared/Container/Container";
 import GradientCircle from "../shared/GradientCircle/GradientCircle";
+import { BsArrowUpRight } from "react-icons/bs";
 import {
   StyledWrapper,
   StyledContent,
@@ -8,9 +9,11 @@ import {
   StyledContentRight,
   StyledHeading,
   StyledImg,
+  StyledAttractorHook
 } from "./styles";
 
 import sample from "../../assets/images/hero-img-black.jpg";
+import hookImg from "../../assets/images/hook-img.png";
 
 const About: React.FC = () => {
   return (
@@ -35,6 +38,11 @@ const About: React.FC = () => {
             </StyledImg>
           </StyledContentRight>
         </StyledContent>
+        <StyledAttractorHook>
+          <h2>power your business <img src={hookImg} alt="" /> with
+          <br/>creative <span><BsArrowUpRight/></span> solutions
+          </h2>
+        </StyledAttractorHook>
       </Container>
     </StyledWrapper>
   );

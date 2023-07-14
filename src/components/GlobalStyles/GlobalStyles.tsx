@@ -8,7 +8,9 @@ export const GlobalStyles = createGlobalStyle`
   --black: #000;
   --black-2: #101010;
   --black-3: #171717;
+  --black-4: #292929;
   --gray-1: #C4C4C4;
+
   --primary-gradient: linear-gradient(48deg, #BF00FF 0%, #750CE8 100%);
 }
 
