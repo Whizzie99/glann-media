@@ -23,7 +23,7 @@ export const StyledLogo = styled.div`
   flex: 0.25;
   /* height: 5em; */
 
-  img{
+  img {
     width: 100%;
     /* height: 100% */
     object-fit: contain;
@@ -35,7 +35,7 @@ export const StyledHamburgerMenu = styled.div`
   flex-direction: column;
   gap: 0.4em;
 
-  span{
+  span {
     height: 0.1em;
     width: 2em;
     background: var(--white);

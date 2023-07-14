@@ -1,8 +1,13 @@
 import React from "react";
 import Container from "../Container/Container";
-import { StyledWrapper, StyledLogo, StyledHamburgerMenu, StyledNav } from "./styles";
+import {
+  StyledWrapper,
+  StyledLogo,
+  StyledHamburgerMenu,
+  StyledNav,
+} from "./styles";
 
-import logo from "../../../assets/images/logo.png"
+import logo from "../../../assets/images/logo.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -16,11 +21,11 @@ const Navbar: React.FC = () => {
             <span></span>
             <span></span>
             <span></span>
-            </StyledHamburgerMenu>
-          </StyledNav>
+          </StyledHamburgerMenu>
+        </StyledNav>
       </Container>
     </StyledWrapper>
   );
-}
+};
 
 export default Navbar;

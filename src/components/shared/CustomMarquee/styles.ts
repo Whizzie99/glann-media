@@ -16,19 +16,12 @@ export const StyledMarqueeText = styled.div`
   align-items: center;
   gap: 0.2em;
 
-  p{
+  p {
     font-size: 1.3em;
     background: var(--primary-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-  }
-
-  span{
-    height: 0.7em;
-    width: 0.7em;
-    border-radius: 50%;
-    background: var(--primary-gradient);
   }
 `;

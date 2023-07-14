@@ -9,11 +9,19 @@ const Hero: React.FC = () => {
   return (
     <StyledWrapper>
       <StyledHeroContent>
-        <h1>align and control <br/> your brand messaging</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium modi, tempore consequatur quia itaque ipsum, temporibus quod alias libero molestiae praesentium beatae.</p>
+        <h1>
+          align and control <br /> your brand messaging
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium
+          modi, tempore consequatur quia itaque ipsum, temporibus quod alias
+          libero molestiae praesentium beatae.
+        </p>
         <Link to="#">
           <span>get started</span>
-          <span><BsArrowRight/></span>
+          <span>
+            <BsArrowRight />
+          </span>
         </Link>
       </StyledHeroContent>
       <StyledHeroImg>
@@ -21,6 +29,6 @@ const Hero: React.FC = () => {
       </StyledHeroImg>
     </StyledWrapper>
   );
-}
+};
 
 export default Hero;

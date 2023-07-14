@@ -6,24 +6,24 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(48deg, #BF00FF 0%, #750CE8 100%);
+  background: linear-gradient(48deg, #bf00ff 0%, #750ce8 100%);
 `;
 
 export const StyledHeroContent = styled.div`
   margin-top: 10em;
   margin-bottom: 3em;
 
-  h1{
+  h1 {
     font-size: 3.9em;
     font-weight: 900;
     text-align: center;
     text-transform: capitalize;
     color: var(--white);
     /* margin-bottom: 2em; */
-    line-height: 1.0;
+    line-height: 1;
   }
 
-  p{
+  p {
     font-size: 1.1em;
     text-transform: center;
     color: var(--white);
@@ -33,7 +33,7 @@ export const StyledHeroContent = styled.div`
     width: 50%;
   }
 
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@ export const StyledHeroContent = styled.div`
     padding: 0.6em;
     gap: 0.3em;
 
-    span:nth-child(2){
+    span:nth-child(2) {
       margin-top: 0.3em;
     }
   }
@@ -58,7 +58,7 @@ export const StyledHeroImg = styled.div`
   margin: 0 auto;
   height: 80vh;
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
