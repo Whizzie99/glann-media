@@ -35,3 +35,36 @@ export const Styledheading = styled.div`
     line-height: 1.5;
   }
 `;
+
+export const StyledAttractorHook = styled.div`
+  margin: 5em 0;
+  padding: 2em 0;
+  background: var(--black-4);
+  border-radius: 1.25em;
+
+  h2 {
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2.6em;
+    font-weight: 900;
+
+    img {
+      height: 0.8em;
+      width: 2em;
+      object-fit: cover;
+      border-radius: 2em;
+    }
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 2em;
+      height: 1em;
+      background: var(--primary-gradient);
+      font-size: 0.7em;
+      border-radius: 2em;
+    }
+  }
+`;

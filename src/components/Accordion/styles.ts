@@ -22,7 +22,7 @@ export const StyledHeading = styled.div`
     font-weight: 800;
     text-transform: capitalize;
     color: var(--gray-2);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
   span {
@@ -31,15 +31,15 @@ export const StyledHeading = styled.div`
     align-items: center;
     font-size: 2.5em;
     color: var(--gray-2);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
 
-  &:hover{
-    h3{
+  &:hover {
+    h3 {
       color: var(--white);
     }
 
-    span{
+    span {
       color: var(--white);
     }
   }

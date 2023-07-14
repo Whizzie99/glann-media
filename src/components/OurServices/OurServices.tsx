@@ -2,7 +2,10 @@ import React from "react";
 import Container from "../shared/Container/Container";
 import GradientCircle from "../shared/GradientCircle/GradientCircle";
 import Accordion from "../Accordion/Accordion";
-import { StyledWrapper, Styledheading } from "./styles";
+import { BsArrowUpRight } from "react-icons/bs";
+import { StyledWrapper, Styledheading, StyledAttractorHook } from "./styles";
+
+import hookImg from "../../assets/images/hook-img.png";
 
 const OurServices: React.FC = () => {
   return (
@@ -19,6 +22,17 @@ const OurServices: React.FC = () => {
           </p>
         </Styledheading>
         <Accordion />
+        <StyledAttractorHook>
+          <h2>
+            excellence: our <img src={hookImg} alt="" /> heart
+            <br />
+            our{" "}
+            <span>
+              <BsArrowUpRight />
+            </span>{" "}
+            core
+          </h2>
+        </StyledAttractorHook>
       </Container>
     </StyledWrapper>
   );

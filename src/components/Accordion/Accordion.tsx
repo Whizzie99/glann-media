@@ -25,8 +25,18 @@ const Accordion: React.FC = () => {
       {ourServicesData.map((service) => (
         <StyledAccordion key={service.id}>
           <StyledHeading onClick={() => toggle(service.id)}>
-            <h3 style={{color:`${clicked === service.id ? "white" : "#5F5F5F"}`}}>{service.title}</h3>
-            <span style={{color:`${clicked === service.id ? "white" : "#5F5F5F"}`}}>
+            <h3
+              style={{
+                color: `${clicked === service.id ? "white" : "#5F5F5F"}`,
+              }}
+            >
+              {service.title}
+            </h3>
+            <span
+              style={{
+                color: `${clicked === service.id ? "white" : "#5F5F5F"}`,
+              }}
+            >
               {clicked === service.id ? (
                 <BsArrowDownRight />
               ) : (
@@ -47,7 +57,11 @@ const Accordion: React.FC = () => {
                 }}
                 transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
               >
-                <p style={{color:`${clicked === service.id ? "white" : "#5F5F5F"}`}}>
+                <p
+                  style={{
+                    color: `${clicked === service.id ? "white" : "#5F5F5F"}`,
+                  }}
+                >
                   {service.description}
                 </p>
               </StyleContent>
