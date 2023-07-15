@@ -6,6 +6,7 @@ import OurServices from "../../components/OurServices/OurServices";
 import OurApproach from "../../components/OurApproach/OurApproach";
 import Team from "../../components/Team/Team";
 import OurClients from "../../components/OurClients/OurClients";
+import ContactUs from "../../components/ContactUs/ContactUs";
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <OurApproach />
       <Team />
       <OurClients />
+      <ContactUs/>
     </>
   );
 };

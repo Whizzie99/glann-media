@@ -14,7 +14,6 @@ import {
 import "swiper/css";
 import "swiper/css/autoplay";
 
-import sample from "../../assets/images/clients/adewunmi.png";
 
 const OurClients: React.FC = () => {
   return (
