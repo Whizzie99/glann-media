@@ -5,8 +5,6 @@ export const StyledWrapper = styled.div`
   padding: 3em 0;
 `;
 
-
-
 export const StyledHeading = styled.div`
   width: 100%;
   margin: 0 auto;
@@ -37,16 +35,15 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 40%;
 
-    > div{
-
-      h2{
+    > div {
+      h2 {
         font-size: 3em;
       }
 
-      > span{
+      > span {
         margin-top: 2.4em;
       }
     }

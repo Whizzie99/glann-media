@@ -12,8 +12,8 @@ export const StyledSection = styled.div`
   align-items: center;
   background: var(--primary-gradient);
   padding: 4em 0;
-  border-bottom-left-radius: 5em;
-  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 
   h2 {
     font-size: 2.3em;
@@ -34,15 +34,17 @@ export const StyledSection = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     padding: 6em 0;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
 
-    h2{
+    h2 {
       font-size: 3em;
       width: 50%;
     }
 
-    p{
+    p {
       width: 55%;
     }
   }
@@ -69,13 +71,13 @@ export const StyledCta = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 25%;
 
-    a{
+    a {
       font-size: 1.2em;
 
-      span:last-child{
+      span:last-child {
         font-size: 1.4em;
       }
     }

@@ -1,6 +1,12 @@
 import React from "react";
 import Container from "../Container/Container";
 import {
+  FaSquareFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa6";
+import {
   StyledWrapper,
   StyledFooter,
   StyledCopyright,
@@ -23,22 +29,22 @@ const Footer: React.FC = () => {
             <ul>
               <li>
                 <a href="#" target="_blank">
-                  facebook
+                  <FaSquareFacebook />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  instagram
+                  <FaInstagram />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  linkedIn
+                  <FaLinkedin />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  twitter
+                  <FaTwitter />
                 </a>
               </li>
             </ul>

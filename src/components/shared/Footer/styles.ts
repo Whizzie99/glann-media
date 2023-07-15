@@ -10,9 +10,8 @@ export const StyledFooter = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +26,10 @@ export const StyledCopyright = styled.div`
     font-weight: 300;
   }
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     order: 2;
 
-    p{
+    p {
       text-align: center;
     }
   }
@@ -47,11 +46,20 @@ export const StyledSocialIcons = styled.div`
         text-decoration: none;
         text-transform: capitalize;
         color: var(--gray-1);
+        font-size: 1.3em;
       }
     }
   }
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 900px) {
     order: 1;
+
+    ul {
+      li {
+        a {
+          font-size: 1.1em;
+        }
+      }
+    }
   }
 `;
