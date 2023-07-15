@@ -1,10 +1,18 @@
-import React from "react"
+import React from "react";
 import Container from "../shared/Container/Container";
 import GradientCircle from "../shared/GradientCircle/GradientCircle";
 import { FaLinkedin, FaEnvelope } from "react-icons/fa6";
-import { StyledWrapper, StyledHeading, StyledTeamGrid, StyledTeamCard, StyledCardImg, StyledCardContent, StyledContactIcons } from "./styles";
+import {
+  StyledWrapper,
+  StyledHeading,
+  StyledTeamGrid,
+  StyledTeamCard,
+  StyledCardImg,
+  StyledCardContent,
+  StyledContactIcons,
+} from "./styles";
 
-import sample from "../../assets/images/team-1.jpeg"
+import sample from "../../assets/images/team-1.jpeg";
 
 const Team = () => {
   return (
@@ -13,9 +21,11 @@ const Team = () => {
         <StyledHeading>
           <div>
             <h2>meet the team</h2>
-            <GradientCircle/>
+            <GradientCircle />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illo.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, illo.
+          </p>
         </StyledHeading>
         <StyledTeamGrid>
           <StyledTeamCard>
@@ -27,32 +37,12 @@ const Team = () => {
               <StyledContactIcons>
                 <span>
                   <a href="mailto:#">
-                    <FaEnvelope/>
+                    <FaEnvelope />
                   </a>
                 </span>
                 <span>
                   <a href="mailto:#">
-                    <FaLinkedin/>
-                  </a>
-                </span>
-              </StyledContactIcons>
-            </StyledCardContent>
-          </StyledTeamCard>
-          <StyledTeamCard>
-            <StyledCardImg>
-              <img src={sample} alt="" />
-            </StyledCardImg>
-            <StyledCardContent>
-              <h4>john doe</h4>
-              <StyledContactIcons>
-                <span>
-                  <a href="mailto:#">
-                    <FaEnvelope/>
-                  </a>
-                </span>
-                <span>
-                  <a href="mailto:#">
-                    <FaLinkedin/>
+                    <FaLinkedin />
                   </a>
                 </span>
               </StyledContactIcons>
@@ -67,12 +57,32 @@ const Team = () => {
               <StyledContactIcons>
                 <span>
                   <a href="mailto:#">
-                    <FaEnvelope/>
+                    <FaEnvelope />
+                  </a>
+                </span>
+                <span>
+                  <a href="mailto:#">
+                    <FaLinkedin />
+                  </a>
+                </span>
+              </StyledContactIcons>
+            </StyledCardContent>
+          </StyledTeamCard>
+          <StyledTeamCard>
+            <StyledCardImg>
+              <img src={sample} alt="" />
+            </StyledCardImg>
+            <StyledCardContent>
+              <h4>john doe</h4>
+              <StyledContactIcons>
+                <span>
+                  <a href="mailto:#">
+                    <FaEnvelope />
                   </a>
                 </span>
                 <span>
                   <a href="#" target="_blank">
-                    <FaLinkedin/>
+                    <FaLinkedin />
                   </a>
                 </span>
               </StyledContactIcons>
@@ -82,6 +92,6 @@ const Team = () => {
       </Container>
     </StyledWrapper>
   );
-}
- 
+};
+
 export default Team;

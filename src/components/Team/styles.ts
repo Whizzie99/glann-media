@@ -49,9 +49,8 @@ export const StyledCardImg = styled.div`
   position: relative;
   height: 20em;
   width: 100%;
-  
-  
-  img{
+
+  img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -60,7 +59,7 @@ export const StyledCardImg = styled.div`
     z-index: 2;
   }
 
-  &::after{
+  &::after {
     content: "";
     top: 0.4em;
     right: -0.4em;
@@ -70,13 +69,12 @@ export const StyledCardImg = styled.div`
     background: var(--primary-gradient);
     border-radius: 1.25em;
   }
-
 `;
 
 export const StyledCardContent = styled.div`
   margin-top: 1em;
-  
-  h4{
+
+  h4 {
     text-align: center;
     text-transform: capitalize;
     font-weight: 400;
@@ -92,12 +90,11 @@ export const StyledContactIcons = styled.div`
   gap: 0.5em;
   margin-top: 0.3em;
 
-  span{
+  span {
     font-size: 1.3em;
-    
-    a{
+
+    a {
       color: var(--gray-1);
     }
   }
 `;
-

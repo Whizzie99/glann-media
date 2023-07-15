@@ -5,6 +5,7 @@ import About from "../../components/About/About";
 import OurServices from "../../components/OurServices/OurServices";
 import OurApproach from "../../components/OurApproach/OurApproach";
 import Team from "../../components/Team/Team";
+import OurClients from "../../components/OurClients/OurClients";
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +15,8 @@ const Home: React.FC = () => {
       <About />
       <OurServices />
       <OurApproach />
-      <Team/>
+      <Team />
+      <OurClients />
     </>
   );
 };
