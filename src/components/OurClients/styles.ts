@@ -39,8 +39,8 @@ export const StyledHeading = styled.div`
 export const StyledCarousel = styled.div`
   margin: 2.5em 0;
 
-  .swiper{
-    .swiper-wrapper{
+  .swiper {
+    .swiper-wrapper {
       transition-timing-function: linear;
     }
   }
@@ -52,7 +52,7 @@ export const StyledClientImg = styled.div`
   align-items: center;
   height: 5em;
 
-  img{
+  img {
     width: 80%;
     height: 100%;
     object-fit: contain;

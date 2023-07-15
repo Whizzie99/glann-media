@@ -14,7 +14,6 @@ import {
 import "swiper/css";
 import "swiper/css/autoplay";
 
-
 const OurClients: React.FC = () => {
   return (
     <StyledWrapper>
@@ -57,12 +56,11 @@ const OurClients: React.FC = () => {
           >
             {clientsData.map((client) => (
               <SwiperSlide key={client.id}>
-              <StyledClientImg>
-                <img src={client.img} alt="" />
-              </StyledClientImg>
-            </SwiperSlide>
+                <StyledClientImg>
+                  <img src={client.img} alt="" />
+                </StyledClientImg>
+              </SwiperSlide>
             ))}
-            
           </Swiper>
         </StyledCarousel>
       </Container>

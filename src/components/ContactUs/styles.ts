@@ -15,7 +15,7 @@ export const StyledSection = styled.div`
   border-bottom-left-radius: 5em;
   border-bottom-right-radius: 5em;
 
-  h2{
+  h2 {
     font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -25,7 +25,7 @@ export const StyledSection = styled.div`
     line-height: 1.2;
   }
 
-  p{
+  p {
     width: 55%;
     text-align: center;
     color: var(--white);
@@ -39,7 +39,7 @@ export const StyledCta = styled.div`
   border: 0.1em solid var(--white);
   padding: 0.5em;
   border-radius: 0.625em;
-  a{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ export const StyledCta = styled.div`
     font-size: 1.2em;
     text-transform: capitalize;
 
-    span:last-child{
+    span:last-child {
       margin-top: 0.3em;
       font-size: 1.4em;
     }

@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       <OurApproach />
       <Team />
       <OurClients />
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 };

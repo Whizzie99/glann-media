@@ -9,12 +9,16 @@ const ContactUs: React.FC = () => {
       <Container>
         <StyledSection>
           <h2>let&apos;s discuss your ideas</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus sequi facere esse dolorum minus, numquam delectus molestias veritatis incidunt voluptatibus</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus sequi facere esse dolorum minus, numquam delectus
+            molestias veritatis incidunt voluptatibus
+          </p>
           <StyledCta>
             <a href="#" target="_blank" rel="noopenner noreferrer">
               <span>schedule a consult</span>
               <span>
-                <BsArrowRight/>
+                <BsArrowRight />
               </span>
             </a>
           </StyledCta>
@@ -22,6 +26,6 @@ const ContactUs: React.FC = () => {
       </Container>
     </StyledWrapper>
   );
-}
- 
+};
+
 export default ContactUs;
