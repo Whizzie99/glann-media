@@ -66,6 +66,7 @@ export const StyledGridItem = styled.div`
   p {
     text-align: center;
     width: 80%;
+    font-weight: 300;
     color: var(--white);
 
     &::first-letter {
