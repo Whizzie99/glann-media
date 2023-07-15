@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import Container from "../Container/Container";
 import {
   StyledWrapper,
@@ -11,9 +13,20 @@ import {
 
 import logo from "../../../assets/images/logo.png";
 
+gsap.registerPlugin(ScrollTrigger);
+
+
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const elementsRef = useRef<HTMLElement[]>([]);
+
+  const addElementRef = (element: HTMLElement | null) => {
+    if (element) {
+      elementsRef.current.push(element);
+    }
+  };
 
   const handleShowMenu = () => {
     setIsOpen(!isOpen);
@@ -26,6 +39,50 @@ const Navbar: React.FC = () => {
   const redirectToHome = (): void => {
     return navigate("/", { replace: true });
   };
+
+  useEffect(() => {
+    const sectionElement = sectionRef.current;
+    const elements = elementsRef.current;
+
+    const tl = gsap.timeline();
+
+    elements.forEach((element) => {
+      gsap.set(element, { opacity: 0, y: 50 });
+      tl.to(element, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(2)", stagger: {amount: 0.5} });
+    });
+
+    const sectionId = sectionElement?.id;
+
+    const scrollTrigger = ScrollTrigger.create({
+      trigger: sectionElement,
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: true,
+      onEnter: () => {
+        tl.restart();
+      },
+      onEnterBack: () => {
+        tl.restart();
+      },
+      onLeave: () => {
+        tl.progress(0).pause();
+      },
+      onLeaveBack: () => {
+        tl.progress(0).pause();
+      },
+    });
+
+    if (sectionId) {
+      ScrollTrigger.getById(sectionId)?.kill();
+    }
+
+    return () => {
+      tl.kill();
+      scrollTrigger.kill();
+    };
+  }, []);
+
+  
 
   return (
     <>
@@ -44,22 +101,22 @@ const Navbar: React.FC = () => {
         </Container>
       </StyledWrapper>
       {isOpen && (
-        <StyledMenuItems>
+        <StyledMenuItems ref={sectionRef}>
           <ul>
-            <li onClick={handleHideMenu}>
-              <Link to="/">home</Link>
+            <li onClick={handleHideMenu} >
+              <Link to="/" ref={addElementRef}>home</Link>
+            </li>
+            <li onClick={handleHideMenu} >
+              <Link to="/#about" ref={addElementRef}>about</Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#about">about</Link>
+              <Link to="/#services" ref={addElementRef}>services</Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#services">services</Link>
+              <Link to="/#approaches"ref={addElementRef} >our approach</Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#approaches">our approach</Link>
-            </li>
-            <li onClick={handleHideMenu}>
-              <Link to="/#contact">contact us</Link>
+              <Link to="/#contact" ref={addElementRef}>contact us</Link>
             </li>
           </ul>
         </StyledMenuItems>
