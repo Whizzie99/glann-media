@@ -16,7 +16,7 @@ export const Styledheading = styled.div`
 
     h2 {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2.3em;
       font-weight: 900;
       color: var(--gray-1);
       text-transform: uppercase;

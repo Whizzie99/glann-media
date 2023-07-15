@@ -45,7 +45,7 @@ export const StyledHeading = styled.div`
   gap: 0.3em;
 
   h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 900;
     color: var(--gray-1);
     text-transform: uppercase;
