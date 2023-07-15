@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -10,9 +10,7 @@ import sample from "../../assets/images/hero-img-2.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Hero: React.FC = () => {
-
   const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
@@ -30,12 +28,10 @@ const Hero: React.FC = () => {
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
-      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "power1.out" });
     });
 
     const sectionId = sectionElement?.id;
-
-    
 
     const scrollTrigger = ScrollTrigger.create({
       trigger: sectionElement,
