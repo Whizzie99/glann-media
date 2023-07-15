@@ -35,16 +35,15 @@ export const Styledheading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 40%;
 
-    > div{
-
-      h2{
+    > div {
+      h2 {
         font-size: 3em;
       }
 
-      > span{
+      > span {
         margin-top: 2.4em;
       }
     }
@@ -53,16 +52,20 @@ export const Styledheading = styled.div`
 
 export const StyledAttractorHook = styled.div`
   margin: 5em 0;
+  margin-top: 8em;
   padding: 2em 0;
   background: var(--black-4);
   border-radius: 1.25em;
+  width: 100%;
 
   h2 {
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 900;
+    margin: 0 auto;
+    width: 100%;
 
     img {
       height: 0.8em;
@@ -83,8 +86,9 @@ export const StyledAttractorHook = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px){
-    h2{
+  @media screen and (min-width: 1024px) {
+    h2 {
+      width: 60%;
       font-size: 2.6em;
     }
   }

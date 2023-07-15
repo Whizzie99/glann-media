@@ -8,11 +8,12 @@ export const StyledWrapper = styled.div`
 export const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2.5em;
   /* margin-bottom: 3em; */
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    gap: 2em;
   }
 `;
 
@@ -30,10 +31,10 @@ export const StyledContentLeft = styled.div`
     color: var(--white);
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 50%;
 
-    p{
+    p {
       width: 80%;
     }
   }
@@ -54,8 +55,8 @@ export const StyledHeading = styled.div`
     margin-top: 2em;
   }
 
-  @media screen and (min-width: 1024px){
-    h2{
+  @media screen and (min-width: 1024px) {
+    h2 {
       font-size: 3em;
     }
 
@@ -68,7 +69,7 @@ export const StyledHeading = styled.div`
 export const StyledContentRight = styled.div`
   width: 100%;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 50%;
   }
 `;
@@ -91,8 +92,8 @@ export const StyledImg = styled.div`
   &::after {
     content: "";
     position: absolute;
-    top: 1em;
-    right: -1em;
+    top: 0.6em;
+    right: -0.6em;
     height: 100%;
     width: 100%;
     background: var(--primary-gradient);
@@ -100,24 +101,34 @@ export const StyledImg = styled.div`
     border-top-right-radius: 5em;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 80%;
     height: 30em;
+
+    &::after {
+      top: 1em;
+      right: -1em;
+    }
   }
 `;
 
 export const StyledAttractorHook = styled.div`
-  margin: 5em 0;
+  margin: 3em 0;
+  margin-top: 10em;
+  /* margin-bottom: 2em; */
   padding: 2em 0;
   background: var(--black-4);
   border-radius: 1.25em;
+  width: 100%;
 
   h2 {
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 900;
+    margin: 0 auto;
+    width: 100%;
 
     img {
       height: 0.8em;
@@ -138,9 +149,10 @@ export const StyledAttractorHook = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px){
-    h2{
+  @media screen and (min-width: 1024px) {
+    h2 {
       font-size: 2.6em;
+      width: 60%;
     }
   }
 `;

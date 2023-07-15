@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Container from "../shared/Container/Container";
 import { BsArrowRight } from "react-icons/bs";
 import { StyledWrapper, StyledSection, StyledCta } from "./styles";
 
 const ContactUs: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <StyledWrapper>
+    <StyledWrapper id="contact">
       <Container>
         <StyledSection>
           <h2>let&apos;s discuss your ideas</h2>

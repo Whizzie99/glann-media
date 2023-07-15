@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Container from "../Container/Container";
 import {
   StyledWrapper,
@@ -12,10 +12,19 @@ import {
 import logo from "../../../assets/images/logo.png";
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleShowMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleHideMenu = () => {
+    setIsOpen(false);
+  };
+
+  const redirectToHome = (): void => {
+    return navigate("/", { replace: true });
   };
 
   return (
@@ -23,7 +32,7 @@ const Navbar: React.FC = () => {
       <StyledWrapper>
         <Container width="90%">
           <StyledNav>
-            <StyledLogo>
+            <StyledLogo onClick={redirectToHome}>
               <img src={logo} alt="Glann Media Consult Logo" />
             </StyledLogo>
             <StyledHamburgerMenu onClick={handleShowMenu} $isOpen={isOpen}>
@@ -37,17 +46,20 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <StyledMenuItems>
           <ul>
-            <li>
+            <li onClick={handleHideMenu}>
               <Link to="/">home</Link>
             </li>
-            <li>
-              <Link to="/">about</Link>
+            <li onClick={handleHideMenu}>
+              <Link to="/#about">about</Link>
             </li>
-            <li>
-              <Link to="/">services</Link>
+            <li onClick={handleHideMenu}>
+              <Link to="/#services">services</Link>
             </li>
-            <li>
-              <Link to="/">our approach</Link>
+            <li onClick={handleHideMenu}>
+              <Link to="/#approaches">our approach</Link>
+            </li>
+            <li onClick={handleHideMenu}>
+              <Link to="/#contact">contact us</Link>
             </li>
           </ul>
         </StyledMenuItems>

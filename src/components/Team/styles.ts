@@ -20,6 +20,7 @@ export const StyledHeading = styled.div`
       font-weight: 900;
       color: var(--gray-1);
       text-transform: uppercase;
+      white-space: nowrap;
     }
 
     > span {
@@ -35,22 +36,20 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 40%;
 
-    > div{
-
-      h2{
+    > div {
+      h2 {
         font-size: 3em;
       }
 
-      > span{
+      > span {
         margin-top: 2.4em;
       }
     }
   }
 `;
-
 
 export const StyledTeamGrid = styled.div`
   display: grid;
@@ -58,7 +57,7 @@ export const StyledTeamGrid = styled.div`
   gap: 3em;
   margin-top: 2em;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
 `;

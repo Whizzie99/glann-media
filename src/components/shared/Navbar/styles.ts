@@ -56,23 +56,23 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
     position: absolute;
     border-radius: 0.5em;
     transition: transform 0.3s ease;
-    
   }
 
   & span:nth-child(1) {
     top: 0;
-    transform: ${props => props.$isOpen ? "translateY(11px) rotate(45deg)" : "none"};
+    transform: ${(props) =>
+      props.$isOpen ? "translateY(11px) rotate(45deg)" : "none"};
   }
 
   & span:nth-child(2) {
     top: 11px;
-    transform: ${props => props.$isOpen ? "scale(0)" : "none"};
+    transform: ${(props) => (props.$isOpen ? "scale(0)" : "none")};
   }
 
   & span:nth-child(3) {
     top: 22px;
-    transform: ${props => props.$isOpen ? "translateY(-11px) rotate(-45deg)" : "none"};
-    
+    transform: ${(props) =>
+      props.$isOpen ? "translateY(-11px) rotate(-45deg)" : "none"};
   }
 
   /* @media screen and (min-width: 1024px){
@@ -117,9 +117,9 @@ export const StyledMenuItems = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    ul{
-      li{
-        a{
+    ul {
+      li {
+        a {
           font-size: 3em;
         }
       }

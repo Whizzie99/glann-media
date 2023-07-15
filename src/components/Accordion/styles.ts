@@ -5,8 +5,8 @@ export const StyledWrapper = styled.div`
   margin: 3em auto;
   width: 100%;
 
-  @media screen and (min-width: 1024px){
-    width: 70%
+  @media screen and (min-width: 1024px) {
+    width: 70%;
   }
 `;
 
@@ -15,7 +15,7 @@ export const StyledAccordion = styled.div`
   border-top: 0.1em solid var(--gray-2);
   cursor: pointer;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     padding: 2em 0;
   }
 `;
@@ -52,12 +52,12 @@ export const StyledHeading = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px){
-    h3{
+  @media screen and (min-width: 1024px) {
+    h3 {
       font-size: 2.3em;
     }
 
-    span{
+    span {
       font-size: 2.5em;
     }
   }

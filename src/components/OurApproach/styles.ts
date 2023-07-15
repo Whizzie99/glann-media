@@ -20,6 +20,7 @@ export const StyledHeading = styled.div`
       font-weight: 900;
       color: var(--gray-1);
       text-transform: uppercase;
+      white-space: nowrap;
     }
 
     > span {
@@ -35,16 +36,15 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     width: 40%;
 
-    > div{
-
-      h2{
+    > div {
+      h2 {
         font-size: 3em;
       }
 
-      > span{
+      > span {
         margin-top: 2.4em;
       }
     }
@@ -58,7 +58,7 @@ export const StyledGridItems = styled.div`
   gap: 2em;
   width: 100%;
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     gap: 1em;
@@ -96,10 +96,10 @@ export const StyledGridItem = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     padding: 2em 1em;
 
-    h3{
+    h3 {
       font-size: 1.8em;
     }
   }
