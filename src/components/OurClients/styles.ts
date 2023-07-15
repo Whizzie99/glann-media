@@ -5,8 +5,10 @@ export const StyledWrapper = styled.div`
   padding: 3em 0;
 `;
 
+
+
 export const StyledHeading = styled.div`
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
 
   > div {
@@ -16,14 +18,14 @@ export const StyledHeading = styled.div`
 
     h2 {
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: 900;
       color: var(--gray-1);
       text-transform: uppercase;
     }
 
     > span {
-      margin-top: 2.4em;
+      margin-top: 1.9em;
     }
   }
 
@@ -33,6 +35,21 @@ export const StyledHeading = styled.div`
     color: var(--white);
     font-weight: 300;
     line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1024px){
+    width: 40%;
+
+    > div{
+
+      h2{
+        font-size: 3em;
+      }
+
+      > span{
+        margin-top: 2.4em;
+      }
+    }
   }
 `;
 

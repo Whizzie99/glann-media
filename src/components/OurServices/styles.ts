@@ -6,7 +6,7 @@ export const StyledWrapper = styled.div`
 `;
 
 export const Styledheading = styled.div`
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
 
   > div {
@@ -16,14 +16,14 @@ export const Styledheading = styled.div`
 
     h2 {
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: 900;
       color: var(--gray-1);
       text-transform: uppercase;
     }
 
     > span {
-      margin-top: 2.4em;
+      margin-top: 1.9em;
     }
   }
 
@@ -33,6 +33,21 @@ export const Styledheading = styled.div`
     color: var(--white);
     font-weight: 300;
     line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1024px){
+    width: 40%;
+
+    > div{
+
+      h2{
+        font-size: 3em;
+      }
+
+      > span{
+        margin-top: 2.4em;
+      }
+    }
   }
 `;
 
@@ -46,7 +61,7 @@ export const StyledAttractorHook = styled.div`
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
-    font-size: 2.6em;
+    font-size: 2em;
     font-weight: 900;
 
     img {
@@ -65,6 +80,12 @@ export const StyledAttractorHook = styled.div`
       background: var(--primary-gradient);
       font-size: 0.7em;
       border-radius: 2em;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    h2{
+      font-size: 2.6em;
     }
   }
 `;

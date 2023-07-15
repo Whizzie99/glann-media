@@ -3,13 +3,21 @@ import { motion } from "framer-motion";
 
 export const StyledWrapper = styled.div`
   margin: 3em auto;
-  width: 70%;
+  width: 100%;
+
+  @media screen and (min-width: 1024px){
+    width: 70%
+  }
 `;
 
 export const StyledAccordion = styled.div`
-  padding: 2em 0;
+  padding: 1em 0;
   border-top: 0.1em solid var(--gray-2);
   cursor: pointer;
+
+  @media screen and (min-width: 1024px){
+    padding: 2em 0;
+  }
 `;
 
 export const StyledHeading = styled.div`
@@ -18,7 +26,7 @@ export const StyledHeading = styled.div`
   align-items: center;
 
   h3 {
-    font-size: 2.3em;
+    font-size: 1.7em;
     font-weight: 800;
     text-transform: capitalize;
     color: var(--gray-2);
@@ -29,7 +37,7 @@ export const StyledHeading = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: var(--gray-2);
     transition: all 0.3s ease;
   }
@@ -41,6 +49,16 @@ export const StyledHeading = styled.div`
 
     span {
       color: var(--white);
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    h3{
+      font-size: 2.3em;
+    }
+
+    span{
+      font-size: 2.5em;
     }
   }
 `;

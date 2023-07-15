@@ -7,22 +7,35 @@ export const StyledWrapper = styled.div`
 
 export const StyledContent = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 2em;
   /* margin-bottom: 3em; */
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledContentLeft = styled.div`
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   p {
-    width: 80%;
+    width: 100%;
     line-height: 1.5;
     font-size: 1.1em;
     font-weight: 300;
     color: var(--white);
+  }
+
+  @media screen and (min-width: 1024px){
+    width: 50%;
+
+    p{
+      width: 80%;
+    }
   }
 `;
 
@@ -31,27 +44,39 @@ export const StyledHeading = styled.div`
   gap: 0.3em;
 
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
     color: var(--gray-1);
     text-transform: uppercase;
   }
 
   > span {
-    margin-top: 2.4em;
-    /* align-self: flex-end; */
-    /* margin-top: -1em; */
+    margin-top: 2em;
+  }
+
+  @media screen and (min-width: 1024px){
+    h2{
+      font-size: 3em;
+    }
+
+    > span {
+      margin-top: 2.4em;
+    }
   }
 `;
 
 export const StyledContentRight = styled.div`
-  width: 50%;
+  width: 100%;
+
+  @media screen and (min-width: 1024px){
+    width: 50%;
+  }
 `;
 
 export const StyledImg = styled.div`
   position: relative;
-  width: 80%;
-  height: 30em;
+  width: 100%;
+  height: 25em;
 
   img {
     position: relative;
@@ -74,6 +99,11 @@ export const StyledImg = styled.div`
     border-top-left-radius: 5em;
     border-top-right-radius: 5em;
   }
+
+  @media screen and (min-width: 1024px){
+    width: 80%;
+    height: 30em;
+  }
 `;
 
 export const StyledAttractorHook = styled.div`
@@ -86,7 +116,7 @@ export const StyledAttractorHook = styled.div`
     text-align: center;
     color: var(--white);
     text-transform: uppercase;
-    font-size: 2.6em;
+    font-size: 2em;
     font-weight: 900;
 
     img {
@@ -105,6 +135,12 @@ export const StyledAttractorHook = styled.div`
       background: var(--primary-gradient);
       font-size: 0.7em;
       border-radius: 2em;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    h2{
+      font-size: 2.6em;
     }
   }
 `;

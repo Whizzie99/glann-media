@@ -7,31 +7,51 @@ export const StyledWrapper = styled.footer`
 
 export const StyledFooter = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 1em;
+  
+
+  @media screen and (min-width: 1024px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const StyledCopyright = styled.div`
-  p{
+  p {
     color: var(--gray-1);
     font-size: 1.03em;
     text-transform: capitalize;
     font-weight: 300;
   }
+
+  @media screen and (max-width: 900px){
+    order: 2;
+
+    p{
+      text-align: center;
+    }
+  }
 `;
 
 export const StyledSocialIcons = styled.div`
-  ul{
+  ul {
     list-style: none;
     display: flex;
     gap: 0.8em;
 
-    li{
-      a{
+    li {
+      a {
         text-decoration: none;
         text-transform: capitalize;
         color: var(--gray-1);
       }
     }
+  }
+
+  @media screen and (max-width: 900px){
+    order: 1;
   }
 `;

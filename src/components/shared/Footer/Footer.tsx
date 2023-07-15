@@ -1,9 +1,13 @@
 import React from "react";
 import Container from "../Container/Container";
-import { StyledWrapper, StyledFooter, StyledCopyright, StyledSocialIcons } from "./styles";
+import {
+  StyledWrapper,
+  StyledFooter,
+  StyledCopyright,
+  StyledSocialIcons,
+} from "./styles";
 
 const Footer: React.FC = () => {
-
   const currentYear: number = new Date().getFullYear();
 
   return (
@@ -11,7 +15,9 @@ const Footer: React.FC = () => {
       <Container>
         <StyledFooter>
           <StyledCopyright>
-            <p>&copy; {currentYear} glann media consult. all rights reserved.</p>
+            <p>
+              &copy; {currentYear} glann media consult. all rights reserved.
+            </p>
           </StyledCopyright>
           <StyledSocialIcons>
             <ul>

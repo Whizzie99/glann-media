@@ -31,7 +31,7 @@ const OurClients: React.FC = () => {
         <StyledCarousel>
           <Swiper
             modules={[Autoplay]}
-            slidesPerView={4}
+            slidesPerView={2}
             spaceBetween={10}
             loop={true}
             speed={3000}
@@ -41,7 +41,7 @@ const OurClients: React.FC = () => {
             }}
             breakpoints={{
               640: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 // spaceBetween: 20,
               },
               768: {

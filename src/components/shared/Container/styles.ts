@@ -5,6 +5,10 @@ interface StyledContainerProps {
 }
 
 export const StyledContainer = styled.div<StyledContainerProps>`
-  width: ${(props) => (props.$width ? props.$width : "80%")};
+  width: 85%;
   margin: 0 auto;
+
+  @media screen and (min-width: 990px) {
+    width: ${(props) => (props.$width ? props.$width : "80%")};
+  }
 `;
