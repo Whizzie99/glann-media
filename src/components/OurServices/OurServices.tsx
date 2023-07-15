@@ -32,7 +32,7 @@ const OurServices: React.FC = () => {
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
-      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "power1.out" });
+      tl.to(element, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(2)", stagger: {amount: 0.5} });
     });
 
     const sectionId = sectionElement?.id;
@@ -91,8 +91,8 @@ const OurServices: React.FC = () => {
           </p>
         </Styledheading>
         <Accordion />
-        <StyledAttractorHook>
-          <h2 ref={addElementRef}>
+        <StyledAttractorHook ref={addElementRef}>
+          <h2>
             excellence: our <img src={hookImg} alt="" /> heart our{" "}
             <span>
               <BsArrowUpRight />
