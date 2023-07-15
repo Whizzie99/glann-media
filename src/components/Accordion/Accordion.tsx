@@ -25,6 +25,14 @@ const Accordion: React.FC = () => {
     }
   };
 
+  const toggle = (index: number) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+
+    setClicked(index);
+  };
+
   useEffect(() => {
     const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
@@ -33,7 +41,7 @@ const Accordion: React.FC = () => {
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
-      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "power1.out" });
+      tl.to(element, { opacity: 1, y: 0, duration: 0.5, ease: "back.out(2)", stagger: {amount: 0.5} });
     });
 
     const sectionId = sectionElement?.id;
@@ -67,13 +75,7 @@ const Accordion: React.FC = () => {
     };
   }, []);
 
-  const toggle = (index: number) => {
-    if (clicked === index) {
-      return setClicked(null);
-    }
-
-    setClicked(index);
-  };
+  
 
   return (
     <StyledWrapper ref={sectionRef}>
