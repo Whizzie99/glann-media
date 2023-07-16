@@ -57,7 +57,7 @@ export const StyledSection = styled.div`
 `;
 
 export const StyledCta = styled.div`
-  width: 80%;
+  width: 90%;
   border: 0.1em solid var(--white);
   padding: 0.5em;
   border-radius: 0.625em;
@@ -73,7 +73,7 @@ export const StyledCta = styled.div`
 
     span:last-child {
       margin-top: 0.3em;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
   }
 
