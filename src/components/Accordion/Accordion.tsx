@@ -68,8 +68,6 @@ const Accordion: React.FC = () => {
     };
   }, []);
 
-  
-
   return (
     <StyledWrapper>
       {ourServicesData.map((service) => (

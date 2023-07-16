@@ -88,10 +88,10 @@ const About: React.FC = () => {
               <GradientCircle />
             </StyledHeading>
             <p ref={addElementRef}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla
-              fugiat amet aliquid quo sint est nam voluptates illum quod
-              incidunt tempora id nisi rerum laboriosam necessitatibus, sunt
-              magni placeat
+              GLANN Media Consult Ltd. is a strategic communications company
+              dedicated to helping businesses and organisations effectively
+              convey their message, build strong relationships, and achieve
+              their goals through the power of communication.
             </p>
           </StyledContentLeft>
           <StyledContentRight>
@@ -101,7 +101,7 @@ const About: React.FC = () => {
           </StyledContentRight>
         </StyledContent>
         <StyledAttractorHook ref={addElementRef}>
-          <h2 >
+          <h2>
             power your business <img src={hookImg} alt="" /> with creative{" "}
             <span>
               <BsArrowUpRight />

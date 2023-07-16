@@ -12,16 +12,48 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledMarqueeText = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.2em;
+  .custom-text {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    p {
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
 
-  p {
+      .custom-span {
+        font-size: 1.3em;
+        background: var(--primary-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+      }
+
+      .custom-circle {
+        height: 0.6em;
+        width: 0.6em;
+        border-radius: 50%;
+        background: var(--primary-gradient);
+        margin-top: 0.4em;
+      }
+    }
+  }
+
+  /* p {
     font-size: 1.3em;
     background: var(--primary-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-  }
+  } */
+
+  /* span {
+    height: 0.6em;
+    width: 0.6em;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    margin-top: 0.4em;
+  } */
 `;

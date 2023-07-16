@@ -15,7 +15,7 @@ export const approachesData: Approach[] = [
     id: 2,
     title: "tailored solutions",
     description:
-      "customised PR campaigns and initiatives are key. Through thorough research and analysis, we meet the specific needs and goals of our client.",
+      "thorugh research and analysis, we customise campaigns to meet the specific needs and goals of our client.",
   },
   {
     id: 3,

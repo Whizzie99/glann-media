@@ -1,19 +1,23 @@
 import React from "react";
 import Marquee from "react-gsap-marquee";
-import GradientCircle from "../GradientCircle/GradientCircle";
+import { valuesData } from "../../../data/values";
 import { StyledWrapper, StyledMarqueeText } from "./styles";
 
-// interface Props {
-//   text?: string;
-// }
+
 
 const CustomMarquee: React.FC = () => {
   return (
     <StyledWrapper>
       <Marquee className="custom-marquee" isReversed>
         <StyledMarqueeText>
-          <p className="custom-text">discover your ideas</p>
-          <GradientCircle height="0.6em" width="0.6em" />
+          <div className="custom-text">
+            {valuesData.map((v) => (
+              <p key={v.id}>
+                <span className="custom-span">{v.text}</span>
+                <span className="custom-circle"></span>
+              </p>
+            ))}
+          </div>
         </StyledMarqueeText>
       </Marquee>
     </StyledWrapper>

@@ -15,7 +15,6 @@ import logo from "../../../assets/images/logo.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -75,8 +74,6 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  
-
   return (
     <>
       <StyledWrapper>
@@ -96,20 +93,30 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <StyledMenuItems>
           <ul>
-            <li onClick={handleHideMenu} >
-              <Link to="/" ref={addElementRef}>home</Link>
-            </li>
-            <li onClick={handleHideMenu} >
-              <Link to="/#about" ref={addElementRef}>about</Link>
+            <li onClick={handleHideMenu}>
+              <Link to="/" ref={addElementRef}>
+                home
+              </Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#services" ref={addElementRef}>services</Link>
+              <Link to="/#about" ref={addElementRef}>
+                about
+              </Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#approaches"ref={addElementRef} >our approach</Link>
+              <Link to="/#services" ref={addElementRef}>
+                services
+              </Link>
             </li>
             <li onClick={handleHideMenu}>
-              <Link to="/#contact" ref={addElementRef}>contact us</Link>
+              <Link to="/#approaches" ref={addElementRef}>
+                our approach
+              </Link>
+            </li>
+            <li onClick={handleHideMenu}>
+              <Link to="/#contact" ref={addElementRef}>
+                contact us
+              </Link>
             </li>
           </ul>
         </StyledMenuItems>

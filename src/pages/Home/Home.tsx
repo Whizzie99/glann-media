@@ -4,7 +4,6 @@ import CustomMarquee from "../../components/shared/CustomMarquee/CustomMarquee";
 import About from "../../components/About/About";
 import OurServices from "../../components/OurServices/OurServices";
 import OurApproach from "../../components/OurApproach/OurApproach";
-import Team from "../../components/Team/Team";
 import OurClients from "../../components/OurClients/OurClients";
 import ContactUs from "../../components/ContactUs/ContactUs";
 
@@ -16,7 +15,6 @@ const Home: React.FC = () => {
       <About />
       <OurServices />
       <OurApproach />
-      <Team />
       <OurClients />
       <ContactUs />
     </>

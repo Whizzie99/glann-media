@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import gsap from "gsap";
@@ -18,9 +18,7 @@ import "swiper/css/autoplay";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const OurClients: React.FC = () => {
-
   // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
@@ -74,8 +72,7 @@ const OurClients: React.FC = () => {
             <GradientCircle />
           </div>
           <p ref={addElementRef}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint
-            voluptates aliquid ut, voluptatibus ea
+            We wouldn&apos;t want you to take only our word for it
           </p>
         </StyledHeading>
         <StyledCarousel ref={addElementRef}>

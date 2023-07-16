@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -62,16 +61,21 @@ const Hero: React.FC = () => {
           align and control <br /> your brand messaging
         </h1>
         <p ref={addElementRef}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium
-          modi, tempore consequatur quia itaque ipsum, temporibus quod alias
-          libero molestiae praesentium beatae.
+          Harness the power of communication to Align And Control your brand
+          messaging, guiding it with precision and purpose to captivate your
+          audience and forge lasting connections.
         </p>
-        <Link to="#" ref={addElementRef}>
+        <a
+          href="https://calendly.com/infoglannmedia/30min"
+          target="_blank"
+          ref={addElementRef}
+          rel="noreferrer"
+        >
           <span>get started</span>
           <span>
             <BsArrowRight />
           </span>
-        </Link>
+        </a>
       </StyledHeroContent>
       <StyledHeroImg ref={addElementRef}>
         <img src={sample} alt="hero img" />

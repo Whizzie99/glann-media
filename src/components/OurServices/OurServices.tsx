@@ -78,10 +78,7 @@ const OurServices: React.FC = () => {
             <h2 ref={addElementRef}>our services</h2>
             <GradientCircle />
           </div>
-          <p ref={addElementRef}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-            assumenda eius recusandae quisquam voluptatibus quas!
-          </p>
+          <p ref={addElementRef}>Achieve a symphony of success</p>
         </Styledheading>
         <Accordion />
         <StyledAttractorHook ref={addElementRef}>

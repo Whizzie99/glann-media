@@ -2,7 +2,7 @@ import img1 from "../assets/images/clients/adewunmi.png";
 import img2 from "../assets/images/clients/afrikstabel.jpg";
 import img3 from "../assets/images/clients/icreate-africa.png";
 import img4 from "../assets/images/clients/raven-bank.svg";
-import img5 from "../assets/images/clients/rosehill-group.png";
+import img5 from "../assets/images/clients/risevest.svg";
 import img6 from "../assets/images/clients/royal-foams.png";
 import img7 from "../assets/images/clients/zagadat-capital.png";
 

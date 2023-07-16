@@ -71,13 +71,13 @@ const ContactUs: React.FC = () => {
       <Container>
         <StyledSection>
           <h2 ref={addElementRef}>let&apos;s discuss your ideas</h2>
-          <p ref={addElementRef}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Necessitatibus sequi facere esse dolorum minus, numquam delectus
-            molestias veritatis incidunt voluptatibus
-          </p>
+          <p ref={addElementRef}>Ready to take your brand to the next level?</p>
           <StyledCta ref={addElementRef}>
-            <a href="https://calendly.com/wisdom-a8u/30min" target="_blank" rel="noopenner noreferrer">
+            <a
+              href="https://calendly.com/infoglannmedia/30min"
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
               <span>schedule a consult</span>
               <span>
                 <BsArrowRight />

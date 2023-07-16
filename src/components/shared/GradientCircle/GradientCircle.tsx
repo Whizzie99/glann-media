@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { StyledCircle } from "./styles";
@@ -11,7 +11,6 @@ interface Props {
 }
 
 const GradientCircle: React.FC<Props> = ({ width, height }) => {
-
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -55,8 +54,13 @@ const GradientCircle: React.FC<Props> = ({ width, height }) => {
     };
   }, []);
 
-
-  return <StyledCircle $width={width} $height={height} ref={addElementRef}></StyledCircle>;
+  return (
+    <StyledCircle
+      $width={width}
+      $height={height}
+      ref={addElementRef}
+    ></StyledCircle>
+  );
 };
 
 export default GradientCircle;

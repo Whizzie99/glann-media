@@ -14,7 +14,6 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const OurApproach: React.FC = () => {
   const location = useLocation();
 
@@ -81,10 +80,7 @@ const OurApproach: React.FC = () => {
             <h2 ref={addElementRef}>our approach</h2>
             <GradientCircle />
           </div>
-          <p ref={addElementRef}>
-            Tailored solutions for exceptional results that exceed client
-            expectations
-          </p>
+          <p ref={addElementRef}>Tailored solutions, exceptional results</p>
         </StyledHeading>
         <StyledGridItems>
           {approachesData.map((approach) => (

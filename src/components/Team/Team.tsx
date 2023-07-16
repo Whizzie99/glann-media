@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Container from "../shared/Container/Container";
@@ -18,9 +18,7 @@ import sample from "../../assets/images/team-1.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Team = () => {
-
   // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 

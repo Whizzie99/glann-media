@@ -1,6 +1,6 @@
 {
-  "short_name": "Glann Media Consult",
-  "name": "Glann Media Consult",
+  "short_name": "GLANN Media Consult",
+  "name": "GLANN Media Consult",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,12 +10,12 @@
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "192x192 20x20"
+      "sizes": "20x20"
     },
     {
       "src": "favicon.png",
       "type": "image/png",
-      "sizes": "512x512 20x20"
+      "sizes": "20x20"
     }
   ],
   "start_url": ".",
