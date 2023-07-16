@@ -82,7 +82,7 @@ export const StyledCta = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    width: 25%;
+    width: 30%;
 
     a {
       font-size: 1.2em;
