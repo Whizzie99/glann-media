@@ -69,7 +69,6 @@ export const StyledCta = styled.div`
     text-decoration: none;
     color: var(--white);
     font-size: 1.1em;
-    text-transform: capitalize;
 
     span:last-child {
       margin-top: 0.3em;

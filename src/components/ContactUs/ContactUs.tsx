@@ -76,7 +76,7 @@ const ContactUs: React.FC = () => {
               target="_blank"
               rel="noopenner noreferrer"
             >
-              <span>schedule a consultation</span>
+              <span>Schedule a Consultation</span>
               <span>
                 <BsArrowRight />
               </span>
