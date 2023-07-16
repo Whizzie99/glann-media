@@ -41,14 +41,14 @@ export const ourServicesData: Service[] = [
     id: 4,
     title: "event planning",
     description:
-      "From concept to execution,our event planning solutions ensure your event is a success. We handle all the details so you can focus on delivering an unforgettable experience.",
+      "From concept to execution, our event planning solutions ensure your event is a success. We handle all the details so you can focus on delivering an unforgettable experience.",
     // img: img4,
   },
   {
     id: 5,
     title: "crisis and reputation management",
     description:
-      "Let our expert team work quickly to help your brand identify potential issues and develope strategic relations solutions to minimize damage and restore trust.",
+      "Let our expert team work quickly to help your brand identify potential issues and develope strategic relations solutions to minimise damage and restore trust.",
     // img: img5,
   },
   {
@@ -69,7 +69,7 @@ export const ourServicesData: Service[] = [
     id: 8,
     title: "analytics measurement",
     description:
-      "Let us help you track what strategies work and what do not.Measure your success with precision,gain valuable insights and the impact of your campaign efforts.",
+      "Let us help you track what strategies work and what do not. Measure your success with precision, gain valuable insights and the impact of your campaign efforts.",
     // img: img8,
   },
 ];
