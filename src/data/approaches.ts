@@ -9,13 +9,13 @@ export const approachesData: Approach[] = [
     id: 1,
     title: "collaboration",
     description:
-      "We partner with clients,media outlets and influencers to enhance brand reputation.",
+      "We partner with clients, media outlets and influencers to enhance brand reputation.",
   },
   {
     id: 2,
     title: "tailored solutions",
     description:
-      "thorugh research and analysis, we customise campaigns to meet the specific needs and goals of our client.",
+      "through research and analysis, we customise campaigns to meet the specific needs and goals of our client.",
   },
   {
     id: 3,
