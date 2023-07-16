@@ -13,9 +13,9 @@ export const StyledWrapper = styled.div`
 
 export const StyledMarqueeText = styled.div`
   .custom-text {
-      display: flex;
-      align-items: center;
-      gap: 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
     p {
       display: flex;
       align-items: center;

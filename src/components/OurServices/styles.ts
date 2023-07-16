@@ -35,7 +35,7 @@ export const Styledheading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 40%;
 
     > div {
@@ -86,7 +86,13 @@ export const StyledAttractorHook = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    h2 {
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
     h2 {
       width: 60%;
       font-size: 2.6em;

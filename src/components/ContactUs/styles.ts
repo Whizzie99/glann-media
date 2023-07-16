@@ -11,7 +11,7 @@ export const StyledSection = styled.div`
   gap: 0.8em;
   align-items: center;
   background: var(--primary-gradient);
-  padding: 4em 0;
+  padding: 4em 1em;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 3em;
 
@@ -34,7 +34,13 @@ export const StyledSection = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px){
+    h2{
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
     padding: 6em 0;
     border-bottom-left-radius: 5em;
     border-bottom-right-radius: 5em;
@@ -71,7 +77,11 @@ export const StyledCta = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: 992px) {
     width: 25%;
 
     a {

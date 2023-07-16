@@ -11,7 +11,13 @@ export const StyledFooter = styled.div`
   align-items: center;
   gap: 1em;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 992px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +32,7 @@ export const StyledCopyright = styled.div`
     font-weight: 300;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 767px) {
     order: 2;
 
     p {

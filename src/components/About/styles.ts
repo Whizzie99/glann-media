@@ -10,7 +10,7 @@ export const StyledContent = styled.div`
   flex-direction: column;
   gap: 2.5em;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row;
     gap: 2em;
   }
@@ -30,7 +30,7 @@ export const StyledContentLeft = styled.div`
     color: var(--white);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 50%;
 
     p {
@@ -54,7 +54,7 @@ export const StyledHeading = styled.div`
     margin-top: 2em;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     h2 {
       font-size: 3em;
     }
@@ -68,7 +68,7 @@ export const StyledHeading = styled.div`
 export const StyledContentRight = styled.div`
   width: 100%;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 50%;
   }
 `;
@@ -105,7 +105,7 @@ export const StyledImg = styled.div`
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 80%;
     height: 30em;
 
@@ -152,7 +152,13 @@ export const StyledAttractorHook = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    h2 {
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
     h2 {
       font-size: 2.6em;
       width: 60%;

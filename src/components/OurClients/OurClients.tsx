@@ -87,15 +87,12 @@ const OurClients: React.FC = () => {
             breakpoints={{
               640: {
                 slidesPerView: 1,
-                
               },
               768: {
                 slidesPerView: 3,
-                
               },
               1024: {
                 slidesPerView: 4,
-                
               },
             }}
           >

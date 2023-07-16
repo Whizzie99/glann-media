@@ -36,7 +36,7 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 40%;
 
     > div {
@@ -59,7 +59,7 @@ export const StyledTeamGrid = styled.div`
   margin-bottom: 0;
   width: 90%;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin: 2em 0;

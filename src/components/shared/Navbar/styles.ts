@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
   border-radius: 2em;
   z-index: 93;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     padding: 2em;
   }
 `;
@@ -37,7 +37,11 @@ export const StyledLogo = styled.div`
     object-fit: contain;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    flex: 0.4;
+  }
+
+  @media screen and (min-width: 992px) {
     flex: 0.25;
   }
 `;
@@ -113,7 +117,7 @@ export const StyledMenuItems = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     ul {
       li {
         a {

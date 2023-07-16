@@ -36,7 +36,7 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 40%;
 
     > div {
@@ -58,7 +58,11 @@ export const StyledGridItems = styled.div`
   gap: 2em;
   width: 100%;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     gap: 1em;
@@ -96,7 +100,7 @@ export const StyledGridItem = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     padding: 2em 1em;
 
     h3 {

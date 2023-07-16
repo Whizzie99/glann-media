@@ -5,6 +5,10 @@ export const StyledWrapper = styled.div`
   margin: 3em auto;
   width: 100%;
 
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 70%;
   }
@@ -52,7 +56,7 @@ export const StyledHeading = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     h3 {
       font-size: 2.3em;
     }

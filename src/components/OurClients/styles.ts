@@ -35,7 +35,7 @@ export const StyledHeading = styled.div`
     line-height: 1.5;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 40%;
 
     > div {

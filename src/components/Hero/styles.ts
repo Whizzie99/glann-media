@@ -51,7 +51,7 @@ export const StyledHeroContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     h1 {
       font-size: 3.9em;
       line-height: 1;
@@ -76,7 +76,7 @@ export const StyledHeroImg = styled.div`
     border-top-left-radius: 5em;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 992px) {
     width: 80%;
     height: 80vh;
   }

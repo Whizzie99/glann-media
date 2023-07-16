@@ -20,7 +20,6 @@ const GradientCircle: React.FC<Props> = ({ width, height }) => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {
