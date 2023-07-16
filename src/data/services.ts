@@ -62,7 +62,7 @@ export const ourServicesData: Service[] = [
     id: 7,
     title: "social media management",
     description:
-      "Master your social presence.Boost engagement,manage your content,and reach your target audience effectively with our top-notch social media management solutions",
+      "Master your social presence.Boost engagement, manage your content,and reach your target audience effectively with our top-notch social media management solutions",
     // img: img7,
   },
   {

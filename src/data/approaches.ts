@@ -21,7 +21,7 @@ export const approachesData: Approach[] = [
     id: 3,
     title: "authenticity",
     description:
-      "our approach includes presenting a consistent and transparent image that aligns with the values,mission and identity of the client.",
+      "our approach includes presenting a consistent and transparent image that aligns with the values, mission and identity of the client.",
   },
   {
     id: 4,
