@@ -101,6 +101,11 @@ export const StyledImg = styled.div`
     border-top-right-radius: 5em;
   }
 
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 80%;
     height: 30em;
