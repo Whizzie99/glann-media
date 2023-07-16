@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <StyledFooter>
           <StyledCopyright>
             <p>
-              &copy; {currentYear} glann media consult. all rights reserved.
+              &copy; {currentYear} GLANN media consult. all rights reserved.
             </p>
           </StyledCopyright>
           <StyledSocialIcons>
