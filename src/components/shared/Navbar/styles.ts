@@ -30,6 +30,7 @@ export const StyledNav = styled.div`
 
 export const StyledLogo = styled.div`
   flex: 0.8;
+  cursor: pointer;
 
   img {
     width: 100%;
