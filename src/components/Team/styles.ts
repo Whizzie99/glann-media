@@ -55,10 +55,15 @@ export const StyledTeamGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: 3em;
-  margin-top: 2em;
+  margin: 2em auto;
+  margin-bottom: 0;
+  width: 90%;
 
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 2em 0;
+    margin-bottom: 0;
   }
 `;
 

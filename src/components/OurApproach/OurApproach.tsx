@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger);
 const OurApproach: React.FC = () => {
   const location = useLocation();
 
-  const sectionRef = useRef<HTMLDivElement>(null);
+  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -28,44 +28,37 @@ const OurApproach: React.FC = () => {
   };
 
   useEffect(() => {
-    const sectionElement = sectionRef.current;
+    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
-
-    const tl = gsap.timeline();
 
     elements.forEach((element) => {
       gsap.set(element, { opacity: 0, y: 50 });
-      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "back.out(2)" });
+
+      const tl = gsap.timeline({ paused: true });
+      tl.to(element, { opacity: 1, y: 0, duration: 1, ease: "power3.out" });
+
+      ScrollTrigger.create({
+        trigger: element,
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+        onEnter: () => {
+          tl.restart();
+        },
+        onEnterBack: () => {
+          tl.restart();
+        },
+        onLeave: () => {
+          tl.progress(0).pause();
+        },
+        onLeaveBack: () => {
+          tl.progress(0).pause();
+        },
+      });
     });
-
-    const sectionId = sectionElement?.id;
-
-    const scrollTrigger = ScrollTrigger.create({
-      trigger: sectionElement,
-      start: "top 80%",
-      end: "bottom 20%",
-      scrub: true,
-      onEnter: () => {
-        tl.restart();
-      },
-      onEnterBack: () => {
-        tl.restart();
-      },
-      onLeave: () => {
-        tl.progress(0).pause();
-      },
-      onLeaveBack: () => {
-        tl.progress(0).pause();
-      },
-    });
-
-    if (sectionId) {
-      ScrollTrigger.getById(sectionId)?.kill();
-    }
 
     return () => {
-      tl.kill();
-      scrollTrigger.kill();
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
@@ -81,7 +74,7 @@ const OurApproach: React.FC = () => {
   }, [location]);
 
   return (
-    <StyledWrapper id="approaches" ref={sectionRef}>
+    <StyledWrapper id="approaches">
       <Container>
         <StyledHeading>
           <div>
