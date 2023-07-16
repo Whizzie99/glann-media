@@ -18,7 +18,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -40,7 +39,6 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {

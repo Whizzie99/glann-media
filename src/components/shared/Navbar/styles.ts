@@ -75,10 +75,6 @@ export const StyledHamburgerMenu = styled.div<StyledHamburgerMenuProps>`
     transform: ${(props) =>
       props.$isOpen ? "translateY(-11px) rotate(-45deg)" : "none"};
   }
-
-  /* @media screen and (min-width: 1024px){
-    
-  } */
 `;
 
 export const StyledMenuItems = styled.div`

@@ -22,11 +22,6 @@ const Footer: React.FC = () => {
           </StyledCopyright>
           <StyledSocialIcons>
             <ul>
-              {/* <li>
-                <a href="#" target="_blank">
-                  <FaSquareFacebook />
-                </a>
-              </li> */}
               <li>
                 <a
                   href="https://www.instagram.com/glann_media_consult/"
@@ -45,11 +40,6 @@ const Footer: React.FC = () => {
                   <FaLinkedin />
                 </a>
               </li>
-              {/* <li>
-                <a href="#" target="_blank">
-                  <FaTwitter />
-                </a>
-              </li> */}
             </ul>
           </StyledSocialIcons>
         </StyledFooter>

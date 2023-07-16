@@ -19,7 +19,6 @@ import sample from "../../assets/images/team-1.jpeg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Team = () => {
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -29,7 +28,6 @@ const Team = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {

@@ -19,7 +19,6 @@ import "swiper/css/autoplay";
 gsap.registerPlugin(ScrollTrigger);
 
 const OurClients: React.FC = () => {
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -29,7 +28,6 @@ const OurClients: React.FC = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {
@@ -89,15 +87,15 @@ const OurClients: React.FC = () => {
             breakpoints={{
               640: {
                 slidesPerView: 1,
-                // spaceBetween: 20,
+                
               },
               768: {
                 slidesPerView: 3,
-                // spaceBetween: 40,
+                
               },
               1024: {
                 slidesPerView: 4,
-                // spaceBetween: 50,
+                
               },
             }}
           >

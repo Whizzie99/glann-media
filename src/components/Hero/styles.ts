@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,6 @@ export const StyledHeroContent = styled.div`
     text-align: center;
     text-transform: capitalize;
     color: var(--white);
-    /* margin-bottom: 2em; */
     line-height: 1.2;
   }
 

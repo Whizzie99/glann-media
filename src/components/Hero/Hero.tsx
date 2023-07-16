@@ -10,7 +10,6 @@ import sample from "../../assets/images/hero-img-2.jpeg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero: React.FC = () => {
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -20,7 +19,6 @@ const Hero: React.FC = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {

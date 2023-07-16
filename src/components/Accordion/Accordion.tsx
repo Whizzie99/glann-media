@@ -16,7 +16,6 @@ gsap.registerPlugin(ScrollTrigger);
 const Accordion: React.FC = () => {
   const [clicked, setClicked] = useState<boolean | number | null>(false);
 
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -34,7 +33,6 @@ const Accordion: React.FC = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {

@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 const OurServices: React.FC = () => {
   const location = useLocation();
 
-  // const sectionRef = useRef<HTMLDivElement>(null);
   const elementsRef = useRef<HTMLElement[]>([]);
 
   const addElementRef = (element: HTMLElement | null) => {
@@ -25,7 +24,6 @@ const OurServices: React.FC = () => {
   };
 
   useEffect(() => {
-    // const sectionElement = sectionRef.current;
     const elements = elementsRef.current;
 
     elements.forEach((element) => {

@@ -9,7 +9,6 @@ export const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5em;
-  /* margin-bottom: 3em; */
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
@@ -120,7 +119,6 @@ export const StyledImg = styled.div`
 export const StyledAttractorHook = styled.div`
   margin: 3em 0;
   margin-top: 10em;
-  /* margin-bottom: 2em; */
   padding: 2em 0;
   background: var(--black-4);
   border-radius: 1.25em;

@@ -39,21 +39,4 @@ export const StyledMarqueeText = styled.div`
       }
     }
   }
-
-  /* p {
-    font-size: 1.3em;
-    background: var(--primary-gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-  } */
-
-  /* span {
-    height: 0.6em;
-    width: 0.6em;
-    border-radius: 50%;
-    background: var(--primary-gradient);
-    margin-top: 0.4em;
-  } */
 `;
