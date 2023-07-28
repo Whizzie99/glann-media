@@ -50,7 +50,7 @@ export const ourServicesData: Service[] = [
   },
   {
     id: 8,
-    title: "analytics measurement",
+    title: "analytics and measurement",
     description:
       "Let us help you track what strategies work and what do not. Measure your success with precision, gain valuable insights and the impact of your campaign efforts.",
   },
