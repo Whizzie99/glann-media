@@ -54,4 +54,10 @@ export const ourServicesData: Service[] = [
     description:
       "Let us help you track what strategies work and what do not. Measure your success with precision, gain valuable insights and the impact of your campaign efforts.",
   },
+  {
+    id: 9,
+    title: "venture scout",
+    description:
+      "Discover companies poised for significant growth and provide analysis on disruptive technologies and unique market offerings.",
+  },
 ];

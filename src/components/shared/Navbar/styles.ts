@@ -100,6 +100,7 @@ export const StyledMenuItems = styled.div`
       text-align: left;
       margin: 1em 0;
       a {
+        font-family: var(--font-stack);
         text-decoration: none;
         text-transform: capitalize;
         font-size: 2em;

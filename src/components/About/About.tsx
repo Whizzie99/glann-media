@@ -15,7 +15,7 @@ import {
   StyledAttractorHook,
 } from "./styles";
 
-import sample from "../../assets/images/hero-img-black.jpg";
+import sample from "../../assets/images/scrabble-img.jpeg";
 import hookImg from "../../assets/images/hook-img.png";
 
 gsap.registerPlugin(ScrollTrigger);

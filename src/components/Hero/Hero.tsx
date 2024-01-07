@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { BsArrowRight } from "react-icons/bs";
 import { StyledWrapper, StyledHeroContent, StyledHeroImg } from "./styles";
 
-import sample from "../../assets/images/hero-img-2.jpeg";
+import sample from "../../assets/images/group-of-people-min.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

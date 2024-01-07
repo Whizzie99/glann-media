@@ -26,10 +26,10 @@ export const GlobalStyles = createGlobalStyle`
 
   /* VARS */
 :root{
-  /* --font-stack: 'Hanken Grotesk', sans-serif; */
-  --font-stack-regular: 'Voga Regular';
+  --font-stack: 'Playfair Display', serif;
+  /* --font-stack-regular: 'Voga Regular';
   --font-stack-medium: 'Voga Medium';
-  --font-stack-bold: 'Voga Bold';
+  --font-stack-bold: 'Voga Bold'; */
   --font-stack-2: 'Lato', sans-serif;
   --white: #fff;
   --black: #000;
@@ -52,7 +52,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h1,h2,h3,h4,h5,h6{
-    font-family: var(--font-stack-bold);
+    font-family: var(--font-stack);
+    /* letter-spacing: 1px; */
   }
 
   p, li, a, button, input, input::placeholder{
